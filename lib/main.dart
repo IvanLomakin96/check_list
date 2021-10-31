@@ -9,7 +9,7 @@ void main()
   runApp(const MyApp());
 }
 
-  class MyApp extends StatelessWidget 
+  class MyApp extends StatelessWidget
   {
     const MyApp({Key? key}) : super(key: key);
 
@@ -23,6 +23,7 @@ void main()
           primarySwatch: Colors.blue,
         ),
         home: const MyHomePage(),
+
       );
     }
   }
@@ -38,11 +39,12 @@ void main()
   class MyHomePageState extends State<MyHomePage> 
   {
     bool checked = false;
-
-   
+    
     @override
     Widget build(BuildContext context) {
-    
+
+      autoSize(context);
+      
       return Scaffold
       (
         appBar: AppBar(
@@ -439,7 +441,10 @@ Widget _buildDropDown()
   
 }
 
-
+autoSize(BuildContext context) {
+ var WidhtSize = MediaQuery.of(context).size.width;
+ var HeightSize = MediaQuery.of(context).size.height;
+}
 
 
 
