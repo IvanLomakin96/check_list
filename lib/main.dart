@@ -224,7 +224,7 @@ Widget _buildDropDown()
       (
         children: 
         [
-          ElevatedButton(
+          Expanded(child:ElevatedButton(
             onPressed: (){},
             child: const Text("Да"),
             style: ButtonStyle(backgroundColor: MaterialStateProperty.all(Colors.white),
@@ -238,11 +238,11 @@ Widget _buildDropDown()
             ),
             
             ),
-          ),
+          )),
 
           const SizedBox(width: 20,),
           
-          ElevatedButton(
+          Expanded(child:ElevatedButton(
             onPressed: (){},
             child: const Text("Нет"),
             style: ButtonStyle(backgroundColor: MaterialStateProperty.all(Colors.white),
@@ -256,7 +256,7 @@ Widget _buildDropDown()
             ),
             
             ),
-          ),
+          )),
             
         ],
       ),
@@ -305,7 +305,7 @@ Widget _buildDropDown()
       (
         children: 
         [
-          ElevatedButton(
+          Expanded(child:ElevatedButton(
             onPressed: (){},
             child: const Text("Да"),
             style: ButtonStyle(backgroundColor: MaterialStateProperty.all(Colors.white),
@@ -319,11 +319,11 @@ Widget _buildDropDown()
             ),
             
             ),
-          ),
+          )),
 
           const SizedBox(width: 20,),
           
-          ElevatedButton(
+          Expanded(child:ElevatedButton(
             onPressed: (){},
             child: const Text("Нет"),
             style: ButtonStyle(backgroundColor: MaterialStateProperty.all(Colors.white),
@@ -337,7 +337,7 @@ Widget _buildDropDown()
             ),
             
             ),
-          ),
+          )),
             
         ],
       ),
@@ -386,7 +386,7 @@ Widget _buildDropDown()
       (
         children: 
         [
-          ElevatedButton(
+          Expanded(child: ElevatedButton(
             onPressed: (){},
             child: const Text("Да"),
             style: ButtonStyle(backgroundColor: MaterialStateProperty.all(Colors.white),
@@ -397,14 +397,14 @@ Widget _buildDropDown()
                 borderRadius: BorderRadius.circular(5.0),
                 side: const BorderSide(color: Colors.black)
               )
-            ),
+            )),
             
             ),
           ),
 
           const SizedBox(width: 20,),
           
-          ElevatedButton(
+          Expanded(child:ElevatedButton(
             onPressed: (){},
             child: const Text("Нет"),
             style: ButtonStyle(backgroundColor: MaterialStateProperty.all(Colors.white),
@@ -418,7 +418,7 @@ Widget _buildDropDown()
             ),
             
             ),
-          ),
+          )),
             
         ],
       ),
